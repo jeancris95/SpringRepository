@@ -2,9 +2,11 @@ package com.book.bookingrestaurantapi.services.impl;
 
 
 import org.modelmapper.ModelMapper;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.book.bookingrestaurantapi.entities.Reservation;
 import com.book.bookingrestaurantapi.entities.Restaurant;
@@ -18,6 +20,7 @@ import com.book.bookingrestaurantapi.repositories.ReservationRepository;
 import com.book.bookingrestaurantapi.repositories.RestaurantRepository;
 import com.book.bookingrestaurantapi.repositories.TurnRepository;
 import com.book.bookingrestaurantapi.services.ReservationService;
+@Service
 public class ReservationServiceImpl implements ReservationService {
 	
 	private static final Logger LOGGER=LoggerFactory.getLogger(ReservationServiceImpl.class);

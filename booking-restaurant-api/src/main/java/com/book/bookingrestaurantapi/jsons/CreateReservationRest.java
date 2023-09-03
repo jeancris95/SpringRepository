@@ -12,7 +12,7 @@ public class CreateReservationRest {
 	private Long restaurantId;
 	
 	@JsonProperty("person")
-	private String person;
+	private Long person;
 	
 	@JsonProperty("date")
 	private Date date;
@@ -28,11 +28,11 @@ public class CreateReservationRest {
 		this.restaurantId = restaurantId;
 	}
 
-	public String getPerson() {
+	public Long getPerson() {
 		return person;
 	}
 
-	public void setPerson(String person) {
+	public void setPerson(Long person) {
 		this.person = person;
 	}
 

@@ -24,7 +24,7 @@ public class Reservation {
 	private String locator;
 	
 	@Column(name="PERSON")
-	private String person;
+	private Long person;
 	
 	@Column(name="DATE")
 	private Date date;
@@ -52,11 +52,11 @@ public class Reservation {
 		this.locator = locator;
 	}
 
-	public String getPerson() {
+	public Long getPerson() {
 		return person;
 	}
 
-	public void setPerson(String person) {
+	public void setPerson(Long person) {
 		this.person = person;
 	}
 
