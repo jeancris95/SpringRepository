@@ -3,13 +3,14 @@ package com.book.bookingrestaurantapi.services.impl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.book.bookingrestaurantapi.exceptions.BookingException;
 import com.book.bookingrestaurantapi.exceptions.InternalServerErrorException;
 import com.book.bookingrestaurantapi.exceptions.NotFoundException;
 import com.book.bookingrestaurantapi.repositories.ReservationRepository;
 import com.book.bookingrestaurantapi.services.CancelReservationService;
-
+@Service
 public class CancelReservationServiceImpl implements CancelReservationService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ReservationServiceImpl.class);
 	@Autowired
