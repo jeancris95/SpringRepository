@@ -15,7 +15,7 @@ import com.book.bookingrestaurantapi.repositories.RestaurantRepository;
 import com.book.bookingrestaurantapi.services.RestaurantService;
 
 @Service
-public class RestaurantServicesImpl implements RestaurantService {
+public class RestaurantServiceImpl implements RestaurantService {
 
 	@Autowired
 	RestaurantRepository restaurantRepository;
@@ -36,5 +36,4 @@ public class RestaurantServicesImpl implements RestaurantService {
 			return restaurantsEntity.stream().map(service ->modelMapper.map(service,RestaurantRest.class)).collect(Collectors.toList());
 			
 	}
-
 }
